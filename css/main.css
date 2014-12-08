@@ -5,6 +5,7 @@ body {
 }
 
     header {
+        color: red; 
         align-content: center;
     }
 
@@ -17,10 +18,7 @@ body {
 }
 
 
-Apply To
 
- Save Heading Setting HTML: 
-CSS: 
 h1 {
 	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
 	font-size: 24px;

@@ -1,7 +1,5 @@
 .toggle-button {
-    animation: colorchange-font 5s linear 1s infinite alternate;
-    background-color: $color;
-    color: $background-color;
+    animation: 5s linear 1s infinite alternate;
     display: inline-block;
     @include headline-font;
     padding: 0 4px;

@@ -1,6 +1,14 @@
 <html>
     <head>
         <link rel="stylesheet" href=""
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("p").toggle();
+          });
+        });
+        </script>
     </head>
         
     <style>
@@ -24,7 +32,7 @@
         <nav>
             <a id="home"></a>
             <nav role="navigation">
-                <a href="#" class="toggle-button">Menu</a>
+                <a href="#" class="toggle-button"><button>Menu</button></a>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#archive">Archive</a></li>

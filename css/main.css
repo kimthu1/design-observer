@@ -1,61 +1,194 @@
 body {
-    background-color: gray;
-    width: auto;
-    margin: 0 auto;
+    width: 80%;
+    margin: 0 10% auto;
+    background-color: #cdc4bb;
 }
 
-    header {
-        color: red; 
-        align-content: center;
-    }
-
-.container { position:relative; padding:0 0 0 55px; }
-#sidebar {
-    position: absolute;
-    top:0; bottom:0; left:0;
-    width:50px;
-    background:#000;
+header{
+    width: 100%;
+    text-align: center;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 150%;
+    color: #9b2800;
 }
 
+header h1 {
+    font-size: 250%;   
+}
 
+header h1 span {
+    font-size: 60%;   
+}
 
-h1 {
-	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26px;
+#main_nav {
+    text-align: center;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    font-size: 150%;
 }
-h3 {
-	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 15px;
+
+#main_nav ul a {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-decoration: none;
+    color: black;
 }
-p {
-	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 20px;
+
+#main_nav ul a:hover {
+    background-color: #a86750;
 }
-blockquote {
-	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-	font-size: 21px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 30px;
+
+main {
+    width: 68%;
+    float: left;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    text-align: justify;
+    margin: 0 5% auto;
 }
-pre {
-	font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
-	font-size: 13px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 18px;
+
+.main_alt {
+    border: 5px solid;
+    border-color: #a86750;
+    background-color: #ffdac0;
 }
+
+main p {
+    margin: 2% 5% auto;   
+}
+
+main article {
+    width: 75%;
+    height: 400px;
+    margin-bottom: 3%;
+    cursor: pointer;
+    margin: 3% auto auto;
+    border: 5px solid;
+    border-color: #a86750;
+}
+
+main img {
+    width: 80%;
+    margin: 4% 10% auto;  
+}
+
+#art1 {
+    background-image: url(/img/article1.jpg);   
+}
+
+#art2 {
+    background-image: url(/img/article2.jpg);   
+}
+
+#art3 {
+    background-image: url(/img/article3.jpg);
+}
+
+#art_link {
+    text-decoration: none;
+    color: black;
+}
+
+.art_title {
+    background-color: #de9e83;
+}
+
+.art_title h3 {
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    font-size: 110%;
+    margin: 0 5% auto;
+    padding-top: 1%;
+}
+
+.art_title h3 span {
+    font-size: 150%;
+}
+
+side {
+    width: 20%;
+    float: right;
+}
+
+side nav input {
+    width: 100%;
+    font-size: 100%;
+}
+
+.side_nav {
+    text-align: center;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    font-size: 120%;
+}
+
+.side_nav ul {
+    margin-left: -40px;   
+}
+
+.side_nav ul a {
+    text-decoration: none;
+    color: black;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.side_nav ul a:hover {
+    background-color: #ffdac0;   
+}
+
+#side_title {
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;   
+}
+
+side article {
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+
+side article:hover {
+    background-color: #ffdac0;
+    cursor: pointer;
+}
+
+#social {
+    width: 80%;
+    margin: 0 15% auto;
+    align-items: center;
+}
+
+.social_row img {
+    width: 40px;
+}
+
+.social_row img:hover {
+    cursor: pointer;
+}
+
+#footer_main {
+    width: 60%;
+    float: left;
+}
+
+#footer_main h5 {
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;   
+}
+
+#footer_side {
+    width: 40%;
+    float: right;
+}
+
+#footer_nav {
+    text-align: center;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    font-size: 80%;
+}
+
+#footer_nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.color1 { color: #9b8e7d; }
+
+.color2 { color: #cdc4bb; }
+
+.color3 { color: #ffdac0; }
+
+.color4 { color: #de9e83; }

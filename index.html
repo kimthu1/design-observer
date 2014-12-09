@@ -1,72 +1,284 @@
 <html>
     <head>
-        <link rel="stylesheet" href=""
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){
-          $("button").click(function(){
-            $("p").toggle();
-          });
-        });
-        </script>
+        <style>
+            body {
+                width: 80%;
+                margin: 0 10% auto;
+                background-color: #cdc4bb;
+            }
+            
+            header{
+                width: 100%;
+                text-align: center;
+                font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+                font-size: 150%;
+                color: #9b2800;
+            }
+            
+            header h1 {
+                font-size: 250%;   
+            }
+            
+            header h1 span {
+                font-size: 60%;   
+            }
+            
+            #main_nav {
+                text-align: center;
+                font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+                font-size: 150%;
+            }
+            
+            #main_nav ul a {
+                padding-left: 3%;
+                padding-right: 3%;
+                text-decoration: none;
+                color: black;
+            }
+            
+            #main_nav ul a:hover {
+                background-color: #a86750;
+            }
+            
+            main {
+                width: 80%;
+                float: left;
+            }
+            
+            main article {
+                width: 75%;
+                height: 400px;
+                margin-bottom: 3%;
+                cursor: pointer;
+                margin: 3% auto auto;
+                border: 5px solid;
+                border-color: #a86750;
+            }
+            
+            #art1 {
+                background-image: url(img/article1.jpg);   
+            }
+            
+            #art2 {
+                background-image: url(img/article2.jpg);   
+            }
+            
+            #art3 {
+                background-image: url(img/article3.jpg);
+            }
+            
+            .art_title {
+                background-color: #de9e83;
+            }
+            
+            .art_title h3 {
+                font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+                font-size: 110%;
+                margin: 0 5% auto;
+                padding-top: 1%;
+            }
+            
+            .art_title h3 span {
+                font-size: 150%;
+            }
+            
+            side {
+                width: 20%;
+                float: right;
+            }
+            
+            side nav input {
+                width: 100%;
+                font-size: 100%;
+            }
+            
+            .side_nav {
+                text-align: center;
+                font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+                font-size: 120%;
+            }
+            
+            .side_nav ul {
+                margin-left: -40px;   
+            }
+            
+            .side_nav ul a {
+                text-decoration: none;
+                color: black;
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+            
+            .side_nav ul a:hover {
+                background-color: #ffdac0;   
+            }
+            
+            #side_title {
+                font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;   
+            }
+            
+            side article {
+                font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+            }
+            
+            side article:hover {
+                background-color: #ffdac0;
+                cursor: pointer;
+            }
+            
+            #social {
+                width: 80%;
+                margin: 0 15% auto;
+                align-items: center;
+            }
+            
+            .social_row img {
+                width: 50px;
+            }
+            
+            .social_row img:hover {
+                cursor: pointer;
+            }
+            
+            #footer_main {
+                width: 60%;
+                float: left;
+            }
+            
+            #footer_main h5 {
+                font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;   
+            }
+            
+            #footer_side {
+                width: 40%;
+                float: right;
+            }
+            
+            #footer_nav {
+                text-align: center;
+                font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+                font-size: 90%;
+            }
+            
+            #footer_nav ul a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            .color1 { color: #9b8e7d; }
+            
+            .color2 { color: #cdc4bb; }
+            
+            .color3 { color: #ffdac0; }
+            
+            .color4 { color: #de9e83; }
+        </style>
     </head>
-        
-    <style>
-        ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-        li {
-            display: inline; 
-        }
-    </style>
-        
     <body>
-        
         <header>
-            <h2>The</h2>
-            <h1>12.07.14 | The Design Observer Group</h1>
+            <h1><span>the</span> Design Observer Group</h1>
         </header>
         
-        <nav>
-            <a id="home"></a>
-            <nav role="navigation">
-                <a href="#" class="toggle-button"><button>Menu</button></a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#archive">Archive</a></li>
-                        <li><a href="#topics">Topics</a></li>
-                        <li><a href="#jobs">Jobs</a></li>
-                        <li><a href="#places">Places</a></li>
-                        <li><a href="#books">Books</a></li>
-                        <li><a href="#50">50|50</a></li>
-                        <li><a href="#profile">Profile</a></li>
-                        <li><a href="#contributors">Contributors</a></li>
-                    </ul>    
+        <hr>
+        
+        <nav id="main_nav">
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Archive</a>
+                <a href="#">Topics</a>
+                <a href="#">Jobs</a>
+                <a href="#">Places</a>
+                <a href="#">Books</a>
+                <a href="#">50|50</a>
+                <a href="#">Profile</a>
+            </ul>
         </nav>
         
+        <hr>
+        
         <main>
+            <article id="art1">
+                <section class="art_title">
+                    <h3>[Adrian Shaughnessy]<span><br>An interview with Kyuha Shim</span></h3>
+                </section>
+            </article>
+            <article id="art2">
+                <section class="art_title">
+                    <h3>[John Foster]<span><br>Citizen Photographers</span></h3>
+                </section>
+            </article>
+            <article id="art3">
+                <section class="art_title">
+                    <h3>[Teal Triggs]<span><br>An interview with Alan Rickman</span></h3>
+                </section>
+            </article>
+        </main>
+        
+        <side>
+            <nav class="side_nav">
+                <ul><a href="#">Log In</a>|<a href="#">Register</a></ul>
+                <input type="search" id="search" placeholder="Search..."/>
+            </nav>
             
-            <div class="callbacks_container">
-                    <ul class="rslides slider">
-                        <li>
-                            <img src="img/index.jpg" alt="">
-                            <p class="caption"><b>Adrian Shaughnessy</b></p>
-                        </li>
-                        <li>
-                            <img src="img/38682-unnamed.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="img/38682-unnamed-1.jpg" alt="">
-                        </li>
-                </ul>
-            <div class="container">
-                <div id="sidebar">Log In</div>                
+            <hr>
+            
+            <h3 id="side_title">Creative Opportunities</h3>
+            <article>
+                RAGINGWIRE DATA CENTERS<br>
+                Ashburn, VA<br>
+                Graphic Designer
+            </article>
+            <br>
+            <article>
+                XOOM<br>
+                San Francisco, CA<br>
+                Senior User Interaction Designer
+            </article>
+            <nav class="side_nav">
+                <ul><a href="#">Post A Job</a>|<a href="#">View All Jobs</a></ul>
+            </nav>
+            
+            <hr>
+            
+            <div id="social">
+                <div class="social_row">
+                    <img src="img/flat-social-media-icons/twitter.png">
+                    <img src="img/flat-social-media-icons/facebook.png">
+                    <img src="img/flat-social-media-icons/google-plus.png">
+                </div>
+                <div class="social_row">
+                    <img src="img/flat-social-media-icons/youtube.png">
+                    <img src="img/flat-social-media-icons/pinterest.png">
+                    <img src="img/flat-social-media-icons/instagram.png">
+                </div>
             </div>
             
-        </main>
-    
+            <hr>
+            
+            <nav class="">
+                <h3 id="side_title">Newsletter Sign Up</h3>
+                <input type="search" id="email" placeholder="Email Address..."/>
+            </nav>
+        </side>
+        
+        <footer>
+            <div id="footer_main">
+                <h5>© 2003-2014 Observer Omnimedia LLC. “Design Observer ” is a registered trademark of Observer Omnimedia LLC.</h5>    
+            </div>
+            <div id="footer_side">
+                <nav id="footer_nav">
+                    <ul>
+                        <a href="#">Credits</a>|
+                        <a href="#">Contact</a>|
+                        <a href="#">Policy</a>|
+                        <a href="#">Support</a>|
+                        <a href="#">Terms of Use</a>    
+                    </ul>
+                </nav>
+            </div>
+        </footer>
     </body>
 </html>
+
+
         
